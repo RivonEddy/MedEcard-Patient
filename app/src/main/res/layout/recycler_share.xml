@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="15dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@drawable/transparent_bg_with_border">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shr_doc_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/shr_doc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr's Name Here"
+            android:textColor="@color/colorAccent1"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shr_hosp_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Address Here"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/shr_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Date Here"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shr_exp_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_share_next_black_24dp"/>
+
+</LinearLayout>

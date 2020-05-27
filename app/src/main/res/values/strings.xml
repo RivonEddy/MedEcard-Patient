@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MedEcard</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Profile</string>
+    <string name="title_pers_info">Info</string>
+    <string name="title_search">Search</string>
+    <string name="title_share">Share</string>
+    <string name="title_records">Records</string>
+    <string name="title_health_tips">Tips</string>
+    <string name="error_message_sname">Enter Surname</string>
+    <string name="error_message_fname">Enter Firstname</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_phone">Enter Phonenumber</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="big_text">
+        Connection method is http POST
+Content type is application/json
+
+An api-key and partnerCode would be given to each partner to validate requests
+The partner must include in the header of your request the following parameters
+partnerCode: access code generated for the partner by the system
+hash: A SHA-256 hash of request JSON string + the partner Api-key
+
+The request will be a RAW POST directly to stream and NOT in a parameter
+This endpoint should be called when a new patient signs up for the medical records service
+
+Please reference the table below for request parameters for obtaining a list of patients for a particular doctor
+
+URL: https://apptualise.net/medirec/api/patients.
+
+        Connection method is http POST
+Content type is application/json
+
+An api-key and partnerCode would be given to each partner to validate requests
+The partner must include in the header of your request the following parameters
+partnerCode: access code generated for the partner by the system
+hash: A SHA-256 hash of request JSON string + the partner Api-key
+
+The request will be a RAW POST directly to stream and NOT in a parameter
+This endpoint should be called when a new patient signs up for the medical records service
+
+Please reference the table below for request parameters for obtaining a list of patients for a particular doctor
+
+URL: https://apptualise.net/medirec/api/patients
+    </string>
+</resources>

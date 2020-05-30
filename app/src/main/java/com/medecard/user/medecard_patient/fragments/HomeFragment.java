@@ -29,9 +29,10 @@ public class HomeFragment extends Fragment {
 
     private RecyclerView myrecyclerview;
     private List<HealthTips> listHealthTips;
-    ImageView imageView;
+    ImageView imageView, btn_edit_abt;
     Intent intent;
-    TextView textView;
+    TextView text_abt, btn_done;
+    EditText edit_abt;
     private Context context;
     @Override
     public void onAttach(Context context) {
@@ -87,6 +88,10 @@ public class HomeFragment extends Fragment {
                 false);
 
         imageView = (ImageView) view.findViewById(R.id.tips_btn);
+        btn_edit_abt = (ImageView) view.findViewById(R.id.btn_edit_abt);
+        text_abt = (TextView) view.findViewById(R.id.text_abt);
+        edit_abt = (EditText) view.findViewById(R.id.edit_abt);
+        btn_done = (TextView) view.findViewById(R.id.btn_done);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,12 +101,24 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        myrecyclerview = (RecyclerView) view.findViewById(R.id.health_tips_recyclerview);
-        RecyclerViewAdapter_HealthTips recyclerViewAdapterRecords = new RecyclerViewAdapter_HealthTips(getContext(),
-                listHealthTips);
-        myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(),
-                LinearLayoutManager.HORIZONTAL, false));
-        myrecyclerview.setAdapter(recyclerViewAdapterRecords);
+        btn_edit_abt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                text_abt.setVisibility(View.INVISIBLE);
+                edit_abt.setVisibility(View.VISIBLE);
+                btn_done.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btn_done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edit_abt.setVisibility(View.INVISIBLE);
+                text_abt.setVisibility(View.VISIBLE);
+                text_abt.setText(edit_abt.getText().toString());
+                btn_done.setVisibility(View.GONE);
+            }
+        });
 
         return view;
     }

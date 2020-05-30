@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.navigation_home:
                                 selectedFragment = HomeFragment.newInstance();
                                 break;
-                            case R.id.navigation_pers_info:
-                                selectedFragment = PersInfoFragment.newInstance();
-                                break;
+//                            case R.id.navigation_pers_info:
+//                                selectedFragment = PersInfoFragment.newInstance();
+//                                break;
                             case R.id.navigation_records:
                                 selectedFragment = RecordsFragment.newInstance();
                                 break;
